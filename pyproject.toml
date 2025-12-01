@@ -6,7 +6,6 @@ authors = [
     {name = "Thibault Dody", email = "thibault.dody@gmail.com"},
 ]
 dependencies = [
-    "format>=1.0",
     "mypy>=1.13.0",
     "black>=24.10.0",
     "ruff>=0.8.1",
@@ -21,6 +20,12 @@ requires-python = "==3.10.*"
 readme = "README.md"
 license = {text = "MIT"}
 
+
+[project.scripts]
+aoc = "aoc:main"
+
+[tool.pdm.scripts]
+aoc = "python aoc.py"
 
 [tool.pdm]
 distribution = false

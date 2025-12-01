@@ -1,23 +1,31 @@
+"""
+Setup the day by creating the input file and the module file.
+
+Example:
+python setup_day.py --year 2024 --day 1
+"""
+
 import argparse
 import os
 
 
-def setup_day(day: int) -> None:
+def setup_day(year: int, day: int) -> None:
     """
     Setup the day by creating the input file and the module file.
     """
+    year_str = str(year)
     day_str = str(day)
-    module_file = f"src/day_{day_str}.py"
-    input_file = f"inputs/day_{day_str}_input.txt"
-    test_file = f"inputs/day_{day_str}_input_test.txt"
+    module_file = f"{year_str}/src/day_{day_str}.py"
+    input_file = f"{year_str}/inputs/day_{day_str}_input.txt"
+    test_file = f"{year_str}/inputs/day_{day_str}_input_test.txt"
 
     if os.path.exists(module_file):
-        print(f"Day {day} already exists.")
+        print(f"Year {year}, day {day} already exists.")
         return
 
     # create the files
     with open(module_file, "w") as file:
-        file.write(f"# Path: src/day_{day_str}.py\n")
+        file.write(f"# Path: {year_str}/src/day_{day_str}.py\n")
         file.write("# --- Part One ---\n\n")
         file.write("def part_1(file_path: str) -> int:\n")
         file.write('    """\n')
@@ -37,13 +45,17 @@ def setup_day(day: int) -> None:
     with open(test_file, "w") as file:
         file.write("")
 
-    print(f"Day {day} created.")
+    print(f"Year {year}, day {day} created.")
 
 
 if __name__ == "__main__":
     argsparse = argparse.ArgumentParser()
     argsparse.add_argument(
+        "--year", type=int, help="The year of the challenge to setup.", required=True
+    )
+    argsparse.add_argument(
         "--day", type=int, help="The day of the challenge to setup.", required=True
     )
+    year = argsparse.parse_args().year
     day = argsparse.parse_args().day
-    setup_day(day)
+    setup_day(year, day)
