@@ -104,7 +104,7 @@ class IDRange:
 def read_input(file_path: str) -> list[IDRange]:
     with open(file_path, "r") as file:
         line = file.readline()
-        ranges = line.split(",")
+        ranges = [r for r in line.split(",") if r]  # Filter out empty strings
         return [IDRange.from_string(range) for range in ranges]
 
 
