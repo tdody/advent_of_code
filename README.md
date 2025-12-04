@@ -1,6 +1,6 @@
 # Advent of Code Solutions
 
-![Advent of Code](https://github.com/tdody/advent_of_code_2024/blob/master/images/Banner.pnd?raw=true)
+![Advent of Code](https://github.com/tdody/advent_of_code_2024/blob/master/images/Banner.png?raw=true)
 
 This repository contains my solutions to [Advent of Code](https://adventofcode.com/) challenges, organized by year.
 
