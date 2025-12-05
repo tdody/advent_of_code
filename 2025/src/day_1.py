@@ -1,6 +1,4 @@
 # Path: 2025/src/day_1.py
-# --- Part One ---
-
 
 """
 --- Day 1: Secret Entrance ---

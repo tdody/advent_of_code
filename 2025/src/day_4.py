@@ -1,5 +1,4 @@
 # Path: 2025/src/day_4.py
-# --- Part One ---
 
 """
 --- Day 4: Printing Department ---

@@ -1,5 +1,4 @@
 # Path: 2025/src/day_3.py
-# --- Part One ---
 
 """
 --- Day 3: Lobby ---

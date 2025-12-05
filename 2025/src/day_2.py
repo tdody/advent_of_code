@@ -1,6 +1,4 @@
 # Path: 2025/src/day_2.py
-# --- Part One ---
-
 
 """
 --- Day 2: Gift Shop ---
