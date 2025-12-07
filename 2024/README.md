@@ -1,0 +1,1 @@
+![Advent of Code](https://github.com/tdody/advent_of_code_2024/blob/master/2024/aoc_2024.png?raw=true)
