@@ -23,6 +23,11 @@ def setup_day(year: int, day: int) -> None:
         print(f"Year {year}, day {day} already exists.")
         return
 
+    if not os.path.exists(f"{year_str}/src"):
+        os.makedirs(f"{year_str}/src")
+    if not os.path.exists(f"{year_str}/inputs"):
+        os.makedirs(f"{year_str}/inputs")
+
     # create the files
     with open(module_file, "w") as file:
         file.write(f"# Path: {year_str}/src/day_{day_str}.py\n")
