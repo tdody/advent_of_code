@@ -160,5 +160,16 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# Input files
+2015/inputs/*
+2016/inputs/*
+2017/inputs/*
+2018/inputs/*
+2019/inputs/*
+2020/inputs/*
+2021/inputs/*
+2022/inputs/*
+2023/inputs/*
 2024/inputs/*
 2025/inputs/*
